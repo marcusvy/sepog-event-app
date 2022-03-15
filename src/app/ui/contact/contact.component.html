@@ -1,0 +1,36 @@
+<form class="contact_form flex flex-col" novalidate (submit)="onSubmit($event)">
+  <div class="form-control">
+    <label class="form-label block pb-4" for="formControlName">
+      <span class="block">Nome</span>
+      <input class="form-input block w-full rounded-lg shadow-sm" type="text" id="formControlName" name="name" />
+    </label>
+  </div>
+
+  <div class="form-control">
+    <label class="form-label block pb-4" for="formControlSubject">
+      <span class="block">Assunto</span>
+      <input class="form-input block w-full rounded-lg shadow-sm" type="text" id="formControlSubject" name="subject" />
+    </label>
+  </div>
+
+  <div class="form-control">
+    <label class="form-label block pb-4" for="formControlEmail">
+      <span class="block">E-mail</span>
+      <input class="form-input block w-full rounded-lg shadow-sm" type="text" id="formControlEmail" name="email" />
+    </label>
+  </div>
+
+  <div class="form-control">
+    <label class="form-label block pb-4" for="formControlPhone">
+      <span class="block">Telefone</span>
+      <input class="form-input block w-full rounded-lg shadow-sm" type="text" id="formControlPhone" name="phone" />
+    </label>
+  </div>
+
+  <div class="form-control">
+    <label class="form-label block pb-4" for="formControlMessage">
+      <span class="block">Mensagem</span>
+      <textarea class="form-text block w-full rounded-lg shadow-sm" type="text" id="formControlMessage" name="message" rows="5"></textarea>
+    </label>
+  </div>
+</form>
