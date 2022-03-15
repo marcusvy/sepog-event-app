@@ -71,7 +71,8 @@
               "browserTarget": "sepog-event-app:build:production"
             },
             "development": {
-              "browserTarget": "sepog-event-app:build:development"
+              "browserTarget": "sepog-event-app:build:development",
+              "proxyConfig": "./api/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
