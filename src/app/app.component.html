@@ -3,6 +3,7 @@
   <app-host [realization]="eventConfig?.realization"></app-host>
 </app-section>
 
+<!-- Inscrição -->
 <app-section class="bg-white text-gray-800" *ngIf="eventConfig?.enabled?.subscription">
   <header>
     <h2
@@ -15,7 +16,7 @@
         [innerHtml]="eventConfig?.sections?.subscription?.article | sanitize">
       </div>
       <a target="_blank"
-        class="flex flex-col items-center order-1 lg:w-1/2 justify-center p-4 rounded-lg bg-gray-300 text-blue-500 font-extrabold text-2xl hover:bg-gray-100 ease-in duration-300"
+        class="flex flex-col items-center order-1 lg:w-1/2 justify-center p-4 rounded-lg bg-blue-500 text-blue-100 font-extrabold text-2xl hover:bg-gray-100 ease-in duration-300"
         [href]="eventConfig?.event?.subscription?.url | sanitize:'url'"
       >
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 lg:h-16 lg:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
