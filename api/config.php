@@ -21,7 +21,7 @@ $output = json_encode([
     ],
     "subscription" => [
       "label" => "Fazer inscrição",
-      "url" => "https://www.even3.com.br/checkout/d630b01d-bcfd-4184-9858-fb20b0de6ce3?i=25754458&lang=pt"
+      "url" => "https://www.even3.com.br/forumredebrasilrondonia/"
     ],
     "contact" => [
       "url" => "",
@@ -107,9 +107,9 @@ $output = json_encode([
     "subscription" => [
       "header" => "Inscrição",
       "lead" => "",
-      "article" => nl2br("Os Fóruns Regionais têm por objetivo promover maior integração entre os parceiros da Rede +Brasil, de forma a fortalecer a governança, o diálogo, a gestão e a melhoria do gasto público, garantindo, assim, maior efetividade das políticas públicas implementadas com recursos públicos.\n
-        Os Fóruns Regionais de Fortalecimento da Rede +BRASIL são uma parceria entre o Ministério da Economia e os parceiros da Rede +Brasil, rede de governança colaborativa que conta, atualmente, com 160 parceiros.\n
-        A Etapa Rondônia contará com o eventos: Comitê de Integração da Rede +Brasil. Participe desse grande encontro que reunirá atores essenciais envolvidos na temática “Transferências de Recursos da União”.\n
+      "article" => nl2br("Os Fóruns Regionais têm por objetivo promover maior integração entre os parceiros da Rede +Brasil, de forma a fortalecer a governança, o diálogo, a gestão e a melhoria do gasto público, garantindo, assim, maior efetividade das políticas públicas implementadas com recursos públicos.
+        Os Fóruns Regionais de Fortalecimento da Rede +BRASIL são uma parceria entre o Ministério da Economia e os parceiros da Rede +Brasil, rede de governança colaborativa que conta, atualmente, com 160 parceiros.
+        A Etapa Rondônia contará com o eventos: Comitê de Integração da Rede +Brasil. Participe desse grande encontro que reunirá atores essenciais envolvidos na temática “Transferências de Recursos da União”.
         Para participar é simples! Preencha o formulário e verifique seu e-mail para confirmação.")
     ],
     "schedule" => [

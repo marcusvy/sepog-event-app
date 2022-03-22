@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform, SecurityContext } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer, SafeHtml, SafeUrl } from '@angular/platform-browser';
 
 @Pipe({
   name: 'sanitize',
@@ -7,14 +7,25 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class SanitizePipe implements PipeTransform {
   constructor(private _domSanitizer: DomSanitizer) {}
 
-  transform(value?: string): SafeHtml {
+  transform(value?: string, mode: string = 'html'): SafeHtml | SafeUrl {
+    let trustedOutput = '';
     if (value == null) {
       value = '';
     }
-    const trustedOutput = this._domSanitizer.sanitize(
-      SecurityContext.HTML,
-      value
-    ) as string;
-    return this._domSanitizer.bypassSecurityTrustHtml(trustedOutput);
+    if (mode === 'html') {
+      trustedOutput = this._domSanitizer.sanitize(
+        SecurityContext.HTML,
+        value
+      ) as string;
+      return this._domSanitizer.bypassSecurityTrustHtml(trustedOutput);
+    }
+    if (mode === 'url') {
+      trustedOutput = this._domSanitizer.sanitize(
+        SecurityContext.URL,
+        value
+      ) as string;
+      return this._domSanitizer.bypassSecurityTrustUrl(trustedOutput);
+    }
+    return value;
   }
 }
