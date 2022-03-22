@@ -1,10 +1,8 @@
-<!-- <app-menu></app-menu> -->
-<!-- <app-hero></app-hero> -->
-<app-section class="text-gray-800 min-h-[50vh]">
-  <app-event bg="/assets/hero.jpg" class=" shadow-lg rounded-lg"></app-event>
+<app-section class="text-gray-800 min-h-[50vh] bg-gray-100">
+  <app-event [event]="eventConfig?.event" bg="/assets/hero.jpg" class=" shadow-lg rounded-lg"></app-event>
   <app-host></app-host>
 </app-section>
-<app-section class="bg-gray-200 text-gray-800">
+<app-section class="bg-white text-gray-800">
   <header>
     <h2
       class="font-display mb-8 text-2xl lg:text-5xl text-blue-600 font-extrabold"

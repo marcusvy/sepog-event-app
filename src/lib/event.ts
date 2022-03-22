@@ -1,3 +1,4 @@
+import { EventAssets } from "./events/event-assets";
 import { EventDate } from "./events/event-date";
 import { EventParameterContact } from "./events/event-parameter-contact";
 import { EventParameterSchedule } from "./events/event-parameter-schedule";
@@ -11,6 +12,7 @@ export interface Event {
   start_time: string;
   end_time: string;
   address: string;
+  assets: EventAssets;
   subscription: EventParameterSubscription;
   contact: EventParameterContact;
   schedule: EventParameterSchedule[];

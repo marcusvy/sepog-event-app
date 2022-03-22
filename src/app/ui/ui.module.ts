@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -23,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     ReactiveFormsModule,
   ],
   exports:[

@@ -9,12 +9,16 @@ $output = json_encode([
   ],
   "event" => [
     "title" => nl2br("Fórum Regional \nde Fortalecimento da \nREDE+BRASIL"),
-    "subtitle" => "",
+    "subtitle" => "Etapa Rondônia",
     "start_date" => date_create_immutable_from_format("d/m/Y H:i", "19/04/2022 08:00"),
     "end_date" => date_create_immutable_from_format("d/m/Y H:i", "19/04/2022 17:00"),
     "start_time" => "09:00",
     "end_time" => "17:00",
     "address" => nl2br("Av. Farquar, 2986, Bairro Pedrinhas, Porto Velho - Rondônia \nPalácio Rio Madeira, Edifício Rio Pacaás Novos \nAuditório Governador Jerônimo Santana - 9º andar"),
+    "assets" => [
+      "event_logo" => '/assets/logo-redemaisbrasil.png',
+      "event_hero_bg" => '/assets/hero.jpg',
+    ],
     "subscription" => [
       "label" => "Fazer inscrição",
       "url" => "https://www.even3.com.br/checkout/d630b01d-bcfd-4184-9858-fb20b0de6ce3?i=25754458&lang=pt"
