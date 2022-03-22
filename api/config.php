@@ -126,5 +126,5 @@ $output = json_encode([
   ],
 ]);
 
-$fileOutput = realpath(__DIR__ . '/../data/config.json');
+$fileOutput = realpath(__DIR__ . '/../src/assets/data/config.json');
 file_put_contents($fileOutput, $output);
