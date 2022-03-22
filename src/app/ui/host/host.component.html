@@ -1,15 +1,15 @@
 <section class="container max-w-5xl mx-auto">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-8 pb-4 text-center">
     <div>
-      <h3 class="text-2xl">Apoio</h3>
+      <h3 class="text-2xl">{{ realization?.partners?.header }}</h3>
       <p *ngFor="let host of staff">
-        <img class="mx-auto" [src]="host.img" [alt]="host.name" />
+        <img class="mx-auto" [src]="host?.image" [alt]="host?.name" />
       </p>
     </div>
     <div>
-      <h3 class="text-2xl">Realização</h3>
+      <h3 class="text-2xl">{{ realization?.organizers?.header }}</h3>
       <p *ngFor="let host of organizers">
-        <img class="mx-auto" [src]="host.img" [alt]="host.name" />
+        <img class="mx-auto" [src]="host?.image" [alt]="host?.name" />
       </p>
     </div>
   </div>

@@ -1,6 +1,6 @@
-import { EventLogo } from "./event-logo";
+import { EventRealization } from "./event-realization";
 
 export interface EventParameterRealization {
-  header: string;
-  logos: EventLogo[];
+  organizers: EventRealization;
+  partners: EventRealization;
 }

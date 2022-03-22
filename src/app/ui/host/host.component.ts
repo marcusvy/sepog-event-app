@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { EventParameterRealization } from 'src/lib/public-api';
 
 interface EventHost {
   name: string;
@@ -12,19 +13,23 @@ interface EventHost {
   styleUrls: ['./host.component.css'],
 })
 export class HostComponent implements OnInit {
-  hosts: EventHost[] = [
-    { name: 'Governo de Rondônia', img: '/assets/hosts/gov_ro.png', organizer: true },
-    { name: 'Governo Federal', img: '/assets/hosts/gov_br_me.png'},
-  ];
+
+  @Input('realization')
+  realization?: EventParameterRealization;
+
+  // hosts: EventHost[] = [
+  //   { name: 'Governo de Rondônia', img: '/assets/hosts/gov_ro.png', organizer: true },
+  //   { name: 'Governo Federal', img: '/assets/hosts/gov_br_me.png'},
+  // ];
 
   constructor() {}
 
   ngOnInit(): void {}
 
   get organizers() {
-    return this.hosts.filter((host) => host.organizer === true);
+    return this.realization?.organizers?.logos;
   }
   get staff() {
-    return this.hosts.filter((host) => !!!host.organizer);
+    return this.realization?.partners?.logos;
   }
 }

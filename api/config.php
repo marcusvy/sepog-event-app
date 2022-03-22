@@ -97,7 +97,7 @@ $output = json_encode([
       ]
     ],
     "partners" => [
-      "header" => "Realização",
+      "header" => "Apoio",
       "logos" => [
         ["name" => "Ministério da Economia", "image" => "/assets/hosts/gov_br_me.png"],
       ]
