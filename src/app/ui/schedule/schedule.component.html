@@ -1,1 +1,14 @@
-<p>schedule works!</p>
+<div class="p-4 bg-white shadow-sm flex flex-col lg:flex-row mb-4 gap-4" *ngFor="let task of tasks">
+  <div class="flex flex-col">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+  </div>
+  <div class="flex flex-col flex-grow">
+    {{task.task}}
+  </div>
+  <div class="flex flex-col text-blue-600">
+    <span class="block text-xs">{{task?.start_date?.date | date: 'longDate'}}</span>
+    <span class="block ">{{task?.start_date?.date | date: 'shortTime'}}</span>
+  </div>
+</div>

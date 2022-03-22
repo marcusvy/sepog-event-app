@@ -29,7 +29,7 @@
 
 <!-- Programação -->
 <app-section class="bg-gray-100 text-gray-800" *ngIf="eventConfig?.enabled?.schedule">
-  <header>
+  <header class="mb-8">
     <h2
       class="font-display mb-8 text-2xl lg:text-5xl text-blue-600 font-extrabold"
     >
@@ -39,6 +39,7 @@
       {{ eventConfig?.sections?.schedule?.lead }}
     </p>
   </header>
+  <app-schedule [event]="eventConfig?.event"></app-schedule>
 </app-section>
 
 <!-- Palestrantes -->

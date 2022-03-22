@@ -14,7 +14,8 @@ $output = json_encode([
     "end_date" => date_create_immutable_from_format("d/m/Y H:i", "19/04/2022 17:00"),
     "start_time" => "09:00",
     "end_time" => "17:00",
-    "address" => nl2br("Av. Farquar, 2986, Bairro Pedrinhas, Porto Velho - Rondônia \nPalácio Rio Madeira, Edifício Rio Pacaás Novos \nAuditório Governador Jerônimo Santana - 9º andar"),
+    "address" => nl2br("L'Acordes Hotel, Rua da Beira - Br 364, 8250,
+    Auditório 1º Andar , Bairro Aeroclube, CEP: 76811-738, Porto Velho, Rondônia"),
     "assets" => [
       "event_logo" => '/assets/logo-redemaisbrasil.png',
       "event_hero_bg" => '/assets/hero.jpg',
@@ -107,9 +108,9 @@ $output = json_encode([
     "subscription" => [
       "header" => "Inscrição",
       "lead" => "",
-      "article" => nl2br("Os Fóruns Regionais têm por objetivo promover maior integração entre os parceiros da Rede +Brasil, de forma a fortalecer a governança, o diálogo, a gestão e a melhoria do gasto público, garantindo, assim, maior efetividade das políticas públicas implementadas com recursos públicos.
-        Os Fóruns Regionais de Fortalecimento da Rede +BRASIL são uma parceria entre o Ministério da Economia e os parceiros da Rede +Brasil, rede de governança colaborativa que conta, atualmente, com 160 parceiros.
-        A Etapa Rondônia contará com o eventos: Comitê de Integração da Rede +Brasil. Participe desse grande encontro que reunirá atores essenciais envolvidos na temática “Transferências de Recursos da União”.
+      "article" => nl2br("Os Fóruns Regionais têm por objetivo promover maior integração entre os parceiros da Rede +Brasil, de forma a fortalecer a governança, o diálogo, a gestão e a melhoria do gasto público, garantindo, assim, maior efetividade das políticas públicas implementadas com recursos públicos.\n
+        Os Fóruns Regionais de Fortalecimento da Rede +BRASIL são uma parceria entre o Ministério da Economia e os parceiros da Rede +Brasil, rede de governança colaborativa que conta, atualmente, com 160 parceiros.\n
+        A Etapa Rondônia contará com o eventos: Comitê de Integração da Rede +Brasil. Participe desse grande encontro que reunirá atores essenciais envolvidos na temática “Transferências de Recursos da União”.\n
         Para participar é simples! Preencha o formulário e verifique seu e-mail para confirmação.")
     ],
     "schedule" => [

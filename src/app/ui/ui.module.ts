@@ -36,7 +36,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     HostComponent,
     ContactComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    ScheduleComponent,
   ]
 })
 export class UiModule { }
