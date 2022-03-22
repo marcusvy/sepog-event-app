@@ -4,7 +4,7 @@ $output = json_encode([
     "subscription" => true,
     "schedule" => true,
     "speakers" => false,
-    "contact" => true,
+    "contact" => false,
     "realization" => true,
   ],
   "event" => [

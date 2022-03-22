@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 
 
@@ -20,7 +21,8 @@ import { SharedModule } from '../shared/shared.module';
     HostComponent,
     ContactComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    ScheduleComponent
   ],
   imports: [
     CommonModule,

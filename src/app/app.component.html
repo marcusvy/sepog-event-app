@@ -2,7 +2,8 @@
   <app-event [event]="eventConfig?.event" bg="/assets/hero.jpg" class=" shadow-lg rounded-lg"></app-event>
   <app-host [realization]="eventConfig?.realization"></app-host>
 </app-section>
-<app-section class="bg-white text-gray-800">
+
+<app-section class="bg-white text-gray-800" *ngIf="eventConfig?.enabled?.subscription">
   <header>
     <h2
       class="font-display mb-8 text-2xl lg:text-5xl text-blue-600 font-extrabold"
@@ -25,12 +26,13 @@
     </div>
   </header>
 </app-section>
-<app-section class="bg-gray-100 text-gray-800">
+
+<!-- Programação -->
+<app-section class="bg-gray-100 text-gray-800" *ngIf="eventConfig?.enabled?.schedule">
   <header>
     <h2
       class="font-display mb-8 text-2xl lg:text-5xl text-blue-600 font-extrabold"
     >
-    <!-- Programação -->
     {{ eventConfig?.sections?.schedule?.header }}
     </h2>
     <p class="text-gray-500">
@@ -38,12 +40,13 @@
     </p>
   </header>
 </app-section>
-<app-section class="bg-blue-800 text-gray-100">
+
+<!-- Palestrantes -->
+<app-section class="bg-blue-800 text-gray-100" *ngIf="eventConfig?.enabled?.speakers">
   <header>
     <h2
       class="font-display mb-8 text-2xl lg:text-5xl text-blue-200 font-extrabold"
     >
-      <!-- Palestrantes -->
       {{ eventConfig?.sections?.speakers?.header }}
     </h2>
     <p class="text-gray-300">
@@ -53,7 +56,7 @@
   <h2></h2>
 </app-section>
 
-<app-section class="bg-gray-800 text-gray-100">
+<app-section class="bg-gray-800 text-gray-100" *ngIf="eventConfig?.enabled?.contact">
   <header class="mb-8">
     <h2
       class="font-display mb-8 text-2xl lg:text-5xl text-blue-600 font-extrabold"
@@ -64,7 +67,7 @@
       Dúvidas ou sugestões, entre em contato com nossa equipe.
     </p>
   </header>
-  <!-- <app-contact></app-contact> -->
+  <app-contact></app-contact>
 </app-section>
 
 <app-footer></app-footer>
